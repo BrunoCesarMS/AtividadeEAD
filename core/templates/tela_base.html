@@ -15,11 +15,16 @@
       color: white;
       height: 100vh;
       padding: 20px;
+      position: fixed;
     }
     .sidebar h2 {
       margin-top: 0;
       font-size: 20px;
     }
+    h2 {
+        text-align: center;
+    }
+
     .sidebar a {
       display: block;
       color: white;
@@ -43,8 +48,8 @@
     <h2>Menu</h2>
     <a href="{% url 'cadastrar_funcionario' %}">Cadastrar Funcionário</a>
     <a href="{% url 'listar_funcionarios' %}">Listar Funcionários</a>
+    <a href="#">Equipamentos</a>
     <a href="#">Relatórios</a>
-    <a href="#">Configurações</a>
   </div>
   <div class="content">
     {% block content %}
